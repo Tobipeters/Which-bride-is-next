@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavHeader from './components/NavHeader/NavHeader'
 import Main from './components/Main/main'
 import ShowSection from './components/ShowSection/ShowSection'
+import Directory from './components/Directory/Directory'
 
 class App extends React.Component {
   constructor(props){
@@ -20,6 +21,7 @@ class App extends React.Component {
         <NavHeader />
         <Main />  
         <ShowSection />
+        <Directory />
       </div>
     );
   }

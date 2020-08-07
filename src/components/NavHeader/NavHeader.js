@@ -92,21 +92,44 @@ class NavHeader extends React.Component {
 
                     </Nav>
                 </div>
-                {/* <Navbar>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Nav className="navbar justify-content-between main-nav" style={{ backgroundImage: `url(${NavBackground})` }}>
+                    <Nav.Link href="#home">Home</Nav.Link>
+                    <Nav.Link href="#link">Watch Show</Nav.Link>
+                    <Nav.Link href="#link">Directory</Nav.Link>
+                    <Nav.Link href="#link">Discount</Nav.Link>
+                    <Nav.Link href="#link">Freebies</Nav.Link>
+                    <Nav.Link href="#link">Blog</Nav.Link>
+                    <Nav.Link href="#link">Contact</Nav.Link>
+                </Nav>
+
+                {/* Mobile view navbar */}
+                <Navbar expand="lg" className="mobile-nav">
+                    <div className="logo-and-toggle">
+                    <Navbar.Brand>
+                        <img
+                            src={Logo}
+                            width="130"
+                            height="60"
+                            className="d-inline-block"
+                            alt="wbn-logo"
+                        />
+                    </Navbar.Brand>
+                    <Navbar.Toggle className="toggler" aria-controls="basic-navbar-nav" />
+                    </div>
                     <Navbar.Collapse id="basic-navbar-nav">
-                    </Navbar.Collapse> */}
-                    <Nav className="navbar justify-content-between main-nav" style={{ backgroundImage: `url(${NavBackground})` }}>
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Watch Show</Nav.Link>
-                        <Nav.Link href="#link">Directory</Nav.Link>
-                        <Nav.Link href="#link">Discount</Nav.Link>
-                        <Nav.Link href="#link">Freebies</Nav.Link>
-                        <Nav.Link href="#link">Blog</Nav.Link>
-                        <Nav.Link href="#link">Contact</Nav.Link>
-                       
-                    </Nav>
-                {/* </Navbar> */}
+                        <Nav className="mob-nav-items">
+                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link href="#link">Watch Show</Nav.Link>
+                            <Nav.Link href="#link">Directory</Nav.Link>
+                            <Nav.Link href="#link">Discount</Nav.Link>
+                            <Nav.Link href="#link">Freebies</Nav.Link>
+                            <Nav.Link href="#link">Blog</Nav.Link>
+                            <Nav.Link href="#link">Contact</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+
+
             </div>
         )
     }

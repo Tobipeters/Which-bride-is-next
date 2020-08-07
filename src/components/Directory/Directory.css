@@ -1,0 +1,124 @@
+.main-dir{
+    background-size: cover;
+    min-height: 700px;
+}
+.dir-text{
+    padding: 0 8%;
+    text-align: center;
+}
+.dir-card-row{
+    margin:0 20%;
+}
+.dir-icon-card{
+    width: fit-content;
+    margin: 10px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, .1);
+}
+.dir-icon-card p {
+    padding: .3rem;
+    margin: 0;
+}
+.participate-cont{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+.participate-text{
+    color: #fff;
+    width:35%;
+    position: absolute;
+    bottom: 3rem;
+    right: 5rem;
+
+}
+.participate-text h3{
+    font-size: 60px;
+    font-family: Edwardian Script ITC;
+    line-height: .9;
+}
+.participate-cont .card{
+    background-color: inherit;
+    border: none;
+    display: block;
+}
+.apply-now{
+   background-position: center;
+    width: max-content;
+    height: 100%;
+    position: absolute;
+    top: 18rem;
+    left: 5rem;
+}
+.apply-now img{
+    margin-top: -10rem;
+    margin-left: 3rem;
+
+}
+.apply-now .list-group-item{
+    background: transparent;
+    border: 1px solid #EC3892;
+    text-align: center;
+}
+.apply-now .list-group{
+    width: 80%;
+    margin: 10px 10% 20px;
+}
+.flower-bottom{
+    width:100%;
+    background-position: center -320px;
+    min-height: 806px;
+    background-repeat: repeat no-repeat;
+    
+}
+
+@media screen and (max-width:768px){
+    .dir-card-row{
+        margin: 0 2%;
+    }
+    .dir-text{
+        font-size: 15px;
+    }
+    .participate-text{
+        width: fit-content;
+        padding: 1rem;
+        text-align: center;
+        float: none;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .participate-text h3{
+        font-size: 40px;
+        font-family: Edwardian Script ITC;
+        line-height: .9;
+    }
+    .apply-now{
+         width: 100%;
+         height: 600px;
+         position: absolute;
+         left: 0;
+         right: 0;
+         margin-top: 3rem;
+     }
+     .apply-now img{
+        width: 300px;
+        display: block;
+        margin: -7rem auto 0px;
+    }
+    .apply-now .list-group{
+        width: 320px;
+        display: block;
+        margin: -5rem auto 1rem
+    }
+    .apply-now .list-group .list-group-item{
+        border-top: .5px solid #EC3892 !important;
+        border-bottom: .5px solid #EC3892;
+        border-right: 1px solid #EC3892;
+        border-left: 1px solid #EC3892;
+    }
+    .apply-now .list-group-horizontal {
+        flex-direction: column;
+    }
+}

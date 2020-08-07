@@ -3,7 +3,7 @@
 }
 .social-list-container{
     list-style:none;
-    /* display: flex; */
+    /* display: flex; */ 
     padding: 0;
     margin: 0;
 }
@@ -29,6 +29,9 @@
 .bride, .my-account{
     padding-right: 30px;
 }
+.my-account span{
+    margin-right: .35rem;
+}
 .main-nav{
     padding:.5rem 10rem;
     /* background-image: url("/src/assests/nav-background.png"); */
@@ -37,6 +40,9 @@
 .main-nav a{
     color: #fff;
 }
+.mobile-nav{
+    display: none;
+}
 
 /* 
 *styling for different phones and ipad sizes
@@ -44,5 +50,27 @@
 @media screen and (max-width:768px){
     .top-nav, .main-nav{
         display: none;
+    }
+    .mobile-nav{
+        display: block;
+        padding:.5rem 0;
+    }
+    .logo-and-toggle{
+        padding: 0 1rem;
+    }
+    .toggler{
+        float: right;
+        display: block;
+        margin-top: 20px;
+    }
+    .mob-nav-items{
+        background-color:#EC3892 ;
+        text-transform: uppercase;
+        padding: 1rem;
+        
+    }
+    .mob-nav-items>.nav-link{
+        text-align: center;
+        color: #fff !important;
     }
 }
