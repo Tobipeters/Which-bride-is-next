@@ -1,0 +1,41 @@
+.main-container{
+    padding: 8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+}
+.main-text{
+    color: #fff;
+    width: 30%;
+}
+.main-text h1{
+    font-family: Edwardian Script ITC;
+    font-size: 100px;   
+}
+.main-text p{
+    font-size: 16px;
+}
+
+/* 
+*Styling for different screen sizes
+*/
+@media screen and (max-width:768px){
+    .main-container{
+        padding: 2rem 1rem;
+        height: 200px;
+        background-size: cover;
+    }
+    .main-text{
+        color: #fff;
+        width: 40%;
+        display: block;
+        margin: auto 10px;
+    }
+    .main-text h1{
+        font-family: Edwardian Script ITC;
+        font-size: 30px;
+    }
+    .main-text p{
+        font-size: 12px;
+    }
+}
