@@ -55,4 +55,16 @@
     .header-cont button{
         margin-top:0 !important;
     }
+    .row-card-1, .row-card-2{
+        padding-top:3rem;
+        padding-bottom: 3rem;
+    }
+    .freebies-card-2, .freebies-card-1{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width:508px){
+    .freebies-card-2, .freebies-card-1{
+        margin-bottom: 2rem;
+    }
 }

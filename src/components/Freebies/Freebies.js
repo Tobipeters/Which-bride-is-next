@@ -18,7 +18,7 @@ const Freebies = () => {
                     <h3 className="sub-title d-inline text-left pt-1 pb-1">Exclusive Freebies</h3>
                     <button className="btn btn-cont float-right mt-3">View All</button>
                 </div>
-                <Row className="pt-2 pb-5">
+                <Row className="pt-4 pb-5 row-card-1">
                     <Col sm={12} md={4} lg={3}>
                         <Card className="freebies-card-1">
                             <span className="card-tag">Free</span>
@@ -71,7 +71,7 @@ const Freebies = () => {
                     <h3 className="sub-title d-inline text-left pt-1 pb-1">Directed Deals</h3>
                     <button className="btn btn-cont float-right mt-3">View All</button>
                 </div>
-                <Row className="pt-2 pb-5">
+                <Row className="pt-4 pb-5 row-card-2">
                     <Col sm={12} md={4} lg={3}>
                         <Card className="freebies-card-2">
                             <Card.Img variant="top" src={Juicy} />
