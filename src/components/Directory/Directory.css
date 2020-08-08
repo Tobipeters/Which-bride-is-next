@@ -156,3 +156,14 @@
         margin-top: 0 ;
     }
 }
+@media screen and (max-width:508px){
+    .main-dir{
+        padding: 30px 10px;
+    }
+  .pink-bg{
+      min-height: 0;
+  }
+    .how-to-row{
+        padding-top: 10rem;
+    }
+}

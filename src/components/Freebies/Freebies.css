@@ -1,7 +1,23 @@
-.freebies-card-1 .card-body{
+.freebies-cont{   
+background: #EDF5F7;
+}
+.freebies-card-1 .card-body, .freebies-card-2 .card-body{
     margin: -5rem .5rem 0rem;
     background-color: #fff;
     border-bottom: 2px solid #EC3892;
+   
+}
+.freebies-card-2 .card-body{
+    border-bottom: none;
+    margin-top: -2rem;
+}
+.freebies-card-1, .freebies-card-2{
+    border: none;
+    background: transparent;
+    margin-right: 2rem;
+}
+.freebies-card-2 .card-img-top, .freebies-card-1 .card-img-top, .freebies-card-1, .freebies-card-2{
+    border-radius: 0;
 }
 .freebies-card-1>span{
     top: -1.2rem;
@@ -36,8 +52,8 @@
     height: 186px !important;
 }
 .freebies-card-2 .card-tag{
-    top: 10rem;
-    right: .6rem;
+    top: 8rem;
+    right: 1rem;
 }
 .freebies-card-2 .card-text>span{
     color: #EC3892;
@@ -66,5 +82,7 @@
 @media screen and (max-width:508px){
     .freebies-card-2, .freebies-card-1{
         margin-bottom: 2rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 }
