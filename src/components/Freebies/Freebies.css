@@ -1,0 +1,19 @@
+.freebies-card-1 .card-body{
+    margin: -5rem .5rem 0rem;
+    background-color: #fff;
+    border-bottom: 2px solid #EC3892;
+}
+.freebies-card-1 .card-body .card-title{
+    margin-bottom: .3rem;
+}
+.freebies-card-1 .card-body .card-text>span{
+    color: #EC3892;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:768px){
+    .header-cont button{
+        margin-top:0 !important;
+    }
+}

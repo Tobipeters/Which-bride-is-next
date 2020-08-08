@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Directory.css'
 import DirectoryBackground from '../../assests/directory-bg.png'
-import { Row, Card, Image, ListGroup, Container, Col } from 'react-bootstrap'
+import { Row, Card, Image, ListGroup, Container, Col, ListGroupItem } from 'react-bootstrap'
 import Flower from '../../assests/dir-flower.png'
 import Gift from '../../assests/dir-gift.png'
 import Necklace from '../../assests/dir-necklace.png'
@@ -12,6 +12,9 @@ import ApplyNow from '../../assests/apply-now.png'
 import Ring from '../../assests/ring.png'
 import BottomFlower from '../../assests/bottom-flower.png'
 import HowTo from '../../assests/how-to-bg.png'
+import Lady from '../../assests/lady.png'
+import List from '../../assests/list-bg.png'
+import Pink from '../../assests/pink-bg.png'
 
 
 
@@ -108,16 +111,33 @@ const Directory = () => {
             </div>
             <section className="flower-bottom" style={{ backgroundImage: `url(${BottomFlower}), url(${HowTo})` }}>
                 <Container>
-                    <Row>
-                        <Col md={6} sm={12}>
+                    <Row className="how-to-row">
+                        <Col md={6} sm={12} className="how-to-lines" style={{ backgroundImage: `url(${List})` }}>
                             <div>
                                 <h3 className="sub-title">How to Participate</h3>
+                                <p>
+                                    Bride covers anyone planning either to have a wedding or vow renewal. To participate, the Bride would need to subscribe to WBIN discount code at N10,000 (Ten Thousand Naira Only). This automatically entitles one to enjoy all the exclusive WBIN juicy discounts offered by about 1000 partnering vendors displayed as Exhibitors under our DISCOUNT menu and listed in our DIRECTORY menu.
+                                </p>
+                                <ul>
+                                    <li>
+                                    Upon subscription to our Discount Code you may choose to participate at no extra cost in the Princess & Queen of all WBIN benefits – Freebies & Reality respectively.
+                                    </li>
+                                   <li>
+                                   Note that once you sign on to WBIN via the discount code, it remains valid even if you have attempted our Reality and/or Freebies platform but did not win.
+                                   </li>
+                                   <li>
+                                   Note that once you sign on to WBIN via the discount code, it remains valid even if you have attempted our Reality and/or Freebies platform but did not win.
+                                   </li >
+                                </ul>
                             </div>
                         </Col>
-                        <Col md={6} sm={12}>
+                        <Col className="just-bg" md={6} sm={12} style={{ backgroundImage: `url(${Lady})` }}>
                         </Col>
                     </Row>
                 </Container>
+            </section>
+            <section  className="pink-bg" style={{ backgroundImage: `url(${Pink})` }}>
+
             </section>
         </section>
     );

@@ -4,6 +4,7 @@ import NavHeader from './components/NavHeader/NavHeader'
 import Main from './components/Main/main'
 import ShowSection from './components/ShowSection/ShowSection'
 import Directory from './components/Directory/Directory'
+import Freebies from './components/Freebies/Freebies'
 
 class App extends React.Component {
   constructor(props){
@@ -22,6 +23,7 @@ class App extends React.Component {
         <Main />  
         <ShowSection />
         <Directory />
+        <Freebies />
       </div>
     );
   }
