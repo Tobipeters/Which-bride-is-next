@@ -28,6 +28,28 @@
     text-transform: uppercase;
     position: absolute;
 }
+.freebies-card-2 .price-cont{
+    width: fit-content;
+    border: 1.5px dashed #EC3892;
+}
+.freebies-card-2 .card-img-top{
+    height: 186px !important;
+}
+.freebies-card-2 .card-tag{
+    top: 10rem;
+    right: .6rem;
+}
+.freebies-card-2 .card-text>span{
+    color: #EC3892;
+    font-size: 13px;
+    font-weight: 500;
+}
+.price-cont>span{
+    font-weight: 500;
+}
+.price-cont>small{
+    color: #EC3892;
+}
 
 @media screen and (max-width:768px){
     .header-cont button{

@@ -12,7 +12,7 @@ import Unveil from '../../assests/unveil.png'
 
 const Freebies = () => {
     return (
-        <div> 
+        <div>
             <Container>
                 <div className="pt-3 pb-3 header-cont">
                     <h3 className="sub-title d-inline text-left pt-1 pb-1">Exclusive Freebies</h3>
@@ -36,7 +36,7 @@ const Freebies = () => {
                     </Col>
                     <Col sm={12} md={4} lg={3}>
                         <Card className="freebies-card-1">
-                        <span className="card-tag">Free</span>
+                            <span className="card-tag">Free</span>
                             <Card.Img variant="top" src={Facials} />
                             <Card.Body>
                                 <Card.Title>Facials</Card.Title>
@@ -51,7 +51,7 @@ const Freebies = () => {
                     </Col>
                     <Col sm={12} md={4} lg={3}>
                         <Card className="freebies-card-1">
-                        <span className="card-tag">Free</span>
+                            <span className="card-tag">Free</span>
                             <Card.Img variant="top" src={MakeUp} />
                             <Card.Body>
                                 <Card.Title>Make up</Card.Title>
@@ -66,24 +66,67 @@ const Freebies = () => {
                     </Col>
                 </Row>
 
-                
+
                 <div className="pt-3 pb-3 header-cont">
                     <h3 className="sub-title d-inline text-left pt-1 pb-1">Directed Deals</h3>
                     <button className="btn btn-cont float-right mt-3">View All</button>
                 </div>
-                <Row>
+                <Row className="pt-2 pb-5">
                     <Col sm={12} md={4} lg={3}>
-                        <Card>
-                            <Card.Img variant="top" src={Unveil} />
+                        <Card className="freebies-card-2">
+                            <Card.Img variant="top" src={Juicy} />
+                            <span className="card-tag">20%</span>
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title className="mb-0">Wedding Juice</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                    <span>  By: Facelift Spa</span>
+                                    
+                                    <div className="p-2 mt-2 mb-2 price-cont">
+                                    <span className="pr-3">N55,000</span>
+                                    <small><del>N75,000</del></small>
+                                    </div>
+                                    <span>Get offer</span>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
+                    <Col sm={12} md={4} lg={3}>
+                        <Card className="freebies-card-2">
+                            <Card.Img variant="top" src={Unveil} />
+                            <span className="card-tag">20%</span>
+                            <Card.Body>
+                                <Card.Title className="mb-0">Wedding Ring</Card.Title>
+                                <Card.Text>
+                                    <span>  By: Facelift Spa</span>
+                                    
+                                    <div className="p-2 mt-2 mb-2 price-cont">
+                                    <span className="pr-3">N55,000</span>
+                                    <small><del>N75,000</del></small>
+                                    </div>
+                                    <span>Get offer</span>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col sm={12} md={4} lg={3}>
+                        <Card className="freebies-card-2">
+                            <Card.Img variant="top" src={Shirt} />
+                            <span className="card-tag">20%</span>
+                            <Card.Body>
+                                <Card.Title className="mb-0">Wedding Shirt</Card.Title>
+                                <Card.Text>
+                                    <span>  By: Facelift Spa</span>
+                                    
+                                    <div className="p-2 mt-2 mb-2 price-cont">
+                                    <span className="pr-3">N55,000</span>
+                                    <small><del>N75,000</del></small>
+                                    </div>
+                                    <span>Get offer</span>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
                 </Row>
             </Container>
         </div>
