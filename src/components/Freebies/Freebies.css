@@ -3,6 +3,10 @@
     background-color: #fff;
     border-bottom: 2px solid #EC3892;
 }
+.freebies-card-1>span{
+    top: -1.2rem;
+    right: .6rem;
+}
 .freebies-card-1 .card-body .card-title{
     margin-bottom: .3rem;
 }
@@ -10,6 +14,19 @@
     color: #EC3892;
     font-size: 12px;
     font-weight: 500;
+}
+.card-tag{
+    color: #fff;
+    background: #EC3892;
+    font-size: 16px;
+    font-weight: 400;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 13px 2px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
 }
 
 @media screen and (max-width:768px){

@@ -4,11 +4,15 @@ import { Container, Row, Card, Col, Button } from 'react-bootstrap';
 import Gown from '../../assests/gown.png'
 import MakeUp from '../../assests/makeup.png'
 import Facials from '../../assests/facials.png'
+import Juicy from '../../assests/juicy.png'
+import WedRing from '../../assests/wed-ring.png'
+import Shirt from '../../assests/shirt.png'
+import Unveil from '../../assests/unveil.png'
 
 
 const Freebies = () => {
     return (
-        <div>
+        <div> 
             <Container>
                 <div className="pt-3 pb-3 header-cont">
                     <h3 className="sub-title d-inline text-left pt-1 pb-1">Exclusive Freebies</h3>
@@ -17,6 +21,7 @@ const Freebies = () => {
                 <Row className="pt-2 pb-5">
                     <Col sm={12} md={4} lg={3}>
                         <Card className="freebies-card-1">
+                            <span className="card-tag">Free</span>
                             <Card.Img variant="top" src={Gown} />
                             <Card.Body>
                                 <Card.Title>Free Gown</Card.Title>
@@ -31,6 +36,7 @@ const Freebies = () => {
                     </Col>
                     <Col sm={12} md={4} lg={3}>
                         <Card className="freebies-card-1">
+                        <span className="card-tag">Free</span>
                             <Card.Img variant="top" src={Facials} />
                             <Card.Body>
                                 <Card.Title>Facials</Card.Title>
@@ -45,6 +51,7 @@ const Freebies = () => {
                     </Col>
                     <Col sm={12} md={4} lg={3}>
                         <Card className="freebies-card-1">
+                        <span className="card-tag">Free</span>
                             <Card.Img variant="top" src={MakeUp} />
                             <Card.Body>
                                 <Card.Title>Make up</Card.Title>
@@ -66,15 +73,14 @@ const Freebies = () => {
                 </div>
                 <Row>
                     <Col sm={12} md={4} lg={3}>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card>
+                            <Card.Img variant="top" src={Unveil} />
                             <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
                                 <Card.Text>
                                     Some quick example text to build on the card title and make up the bulk of
                                     the card's content.
                                 </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
                             </Card.Body>
                         </Card>
                     </Col>
