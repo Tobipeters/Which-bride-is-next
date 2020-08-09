@@ -18,7 +18,7 @@ class NavHeader extends React.Component {
         super()
 
         this.state = {
-            display:'none'
+            searchDisplay:'none'
         }
 
         this.openSearchView = this.openSearchView.bind(this)
