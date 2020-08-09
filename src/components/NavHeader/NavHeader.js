@@ -123,7 +123,7 @@ class NavHeader extends React.Component {
                             <Nav.Item onClick={this.openSearchView}>
                                 <img
                                     src={Search}
-                                    className="d-inline-block icon-size"
+                                    className="d-inline-block icon-size search-icon"
                                     alt="wbn-logo"
                                 />
 
