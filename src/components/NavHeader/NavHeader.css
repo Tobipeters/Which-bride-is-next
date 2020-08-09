@@ -33,7 +33,7 @@
     margin-right: .35rem;
 }
 .main-nav{
-    padding:.5rem 8.5rem;
+    padding:.5rem 7rem;
     /* background-image: url("/src/assests/nav-background.png"); */
     text-transform: uppercase;
 }
@@ -85,9 +85,6 @@
     }
     .top-nav, .main-nav{
         display: none;
-    }
-    .main-nav{
-        padding:.5rem 6.5rem;
     }
     .mobile-nav{
         display: block;
