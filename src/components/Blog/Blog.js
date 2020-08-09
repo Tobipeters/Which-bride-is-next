@@ -12,7 +12,7 @@ const Blog = () => {
             <Container>
             <Row className="pt-2 pb-2 pr-3 pl-3 justify-content-center">
                 <Col  md={4} sm={12} xs={12}>
-                    <Card>
+                    <Card className="mb-md-3">
                         <Card.Img variant="top" src={Unveil} />
                         <Card.Body>
                             <Card.Title>How to marry a Nigerian</Card.Title>
@@ -23,7 +23,7 @@ const Blog = () => {
                     </Card>
                 </Col> 
                 <Col  md={4} sm={12} xs={12}>
-                    <Card>
+                    <Card className="mb-md-3">
                         <Card.Img variant="top" src={Chef} />
                         <Card.Body>
                             <Card.Title>Hiring a Badass Chef</Card.Title>
@@ -34,7 +34,7 @@ const Blog = () => {
                     </Card>
                 </Col>  
                 <Col  md={4} sm={12} xs={12}>
-                    <Card>
+                    <Card className="mb-md-3">
                         <Card.Img variant="top" src={No} />
                         <Card.Body>
                             <Card.Title>She said No</Card.Title>
