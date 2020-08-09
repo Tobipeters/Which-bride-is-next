@@ -18,7 +18,7 @@ class NavHeader extends React.Component {
         super()
 
         this.state = {
-
+            display:'none'
         }
 
         this.openSearchView = this.openSearchView.bind(this)
@@ -26,17 +26,21 @@ class NavHeader extends React.Component {
 
     openSearchView() {
 
+       this.state.searchDisplay ==='none' ? this.setState({searchDisplay:'block' }) : this.setState({searchDisplay:'none' })
     }
 
 
     render() {
         return (
             <div>
-                <div className="search-dropdown">
+                <div style={{display:this.state.searchDisplay}} className="search-dropdown">
+                    <span className="cancel" onClick={this.openSearchView}>
+                        x
+                         </span>
                     <div className="img-container">
                         <img src={SearchFlower} alt="search which bride is next" />
                     </div>
-                    <Container className="mb-5">
+                    <Container className="mb-5 cont-search">
                     <h3 className="sub-title">Search</h3>   
                     <InputGroup className="mb-3">
                         <FormControl
@@ -45,7 +49,7 @@ class NavHeader extends React.Component {
                             required
                         />
                         <InputGroup.Append>
-                            <Button variant="outline-secondary">
+                            <Button className="btn-search" variant="outline-secondary">
                                 <FaSearch />
                             </Button>
                         </InputGroup.Append>
@@ -116,7 +120,7 @@ class NavHeader extends React.Component {
                                     />
                                 </div>
                             </Nav.Item>
-                            <Nav.Item>
+                            <Nav.Item onClick={this.openSearchView}>
                                 <img
                                     src={Search}
                                     className="d-inline-block icon-size"
