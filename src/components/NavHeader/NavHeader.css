@@ -43,11 +43,27 @@
 .mobile-nav{
     display: none;
 }
+/* 
+*Styling for search dropdown 
+ */
+.search-dropdown{
+    width: 100%;
+    height: 100vh;
+    background-color: #EC3892;
+    
+}
+.img-container{
+    text-align: center;
+}
 
 /* 
 *styling for different phones and ipad sizes
 */
 @media screen and (max-width:768px){
+    .search-dropdown{
+        display: none;
+        
+    }
     .top-nav, .main-nav{
         display: none;
     }

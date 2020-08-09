@@ -45,6 +45,7 @@ const Blog = () => {
                     </Card>
                 </Col>   
             </Row>
+            <button className="btn btn-cont d-block mx-auto my-5">More Article</button>
             </Container>
         </div>
 

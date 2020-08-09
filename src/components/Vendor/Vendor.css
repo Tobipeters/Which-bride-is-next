@@ -1,0 +1,19 @@
+.vendor-cont{
+    position: relative;
+}
+.vendor-cont .img-1, .vendor-cont .img-2{
+    display: block;
+    margin:0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+.vendor-cont .img-1{
+    top: -1.6rem;
+}
+.vendor-cont .img-2{
+    bottom: -1.6rem;
+}
+.banner{
+    width: 100%;
+}

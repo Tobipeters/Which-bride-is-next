@@ -88,6 +88,7 @@ class Freebies extends React.Component {
                         autoPlay={false}
                         autoPlaySpeed={3000}
                         additionalTransfrom={0}
+                        focusOnSelect={true}
                         keyBoardControl={true}
                         customTransition="all .5"
                         transitionDuration={500}

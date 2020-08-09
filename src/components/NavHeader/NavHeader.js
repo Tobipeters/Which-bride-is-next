@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Navbar } from 'react-bootstrap'
+import { Nav, Navbar, InputGroup, FormControl, Button, Image, Container } from 'react-bootstrap'
 import Logo from '../../assests/logo.png'
 import Facebook from '../../assests/facebook.png'
 import Instagram from '../../assests/instagram.png'
@@ -9,13 +9,49 @@ import Star from '../../assests/star.png'
 import Search from '../../assests/search.png'
 import NavBackground from '../../assests/nav-background.png'
 import './NavHeader.css'
+import { FaSearch } from 'react-icons/fa'
+import SearchFlower from '../../assests/search-bg.png'
 
 
 class NavHeader extends React.Component {
+    constructor() {
+        super()
+
+        this.state = {
+
+        }
+
+        this.openSearchView = this.openSearchView.bind(this)
+    }
+
+    openSearchView() {
+
+    }
+
 
     render() {
         return (
             <div>
+                <div className="search-dropdown">
+                    <div className="img-container">
+                        <img src={SearchFlower} alt="search which bride is next" />
+                    </div>
+                    <Container className="mb-5">
+                    <h3 className="sub-title">Search</h3>   
+                    <InputGroup className="mb-3">
+                        <FormControl
+                            placeholder="Search Freebies, Directory, Exihibitors, Blogs..."
+                            text="text"
+                            required
+                        />
+                        <InputGroup.Append>
+                            <Button variant="outline-secondary">
+                                <FaSearch />
+                            </Button>
+                        </InputGroup.Append>
+                    </InputGroup>
+                    </Container>
+                </div>
                 <div className="top-nav">
                     <Nav className="d-flex justify-content-between">
                         <div className="d-flex top-nav-item">
@@ -105,16 +141,16 @@ class NavHeader extends React.Component {
                 {/* Mobile view navbar */}
                 <Navbar expand="lg" className="mobile-nav">
                     <div className="logo-and-toggle">
-                    <Navbar.Brand>
-                        <img
-                            src={Logo}
-                            width="130"
-                            height="60"
-                            className="d-inline-block"
-                            alt="wbn-logo"
-                        />
-                    </Navbar.Brand>
-                    <Navbar.Toggle className="toggler" aria-controls="basic-navbar-nav" />
+                        <Navbar.Brand>
+                            <img
+                                src={Logo}
+                                width="130"
+                                height="60"
+                                className="d-inline-block"
+                                alt="wbn-logo"
+                            />
+                        </Navbar.Brand>
+                        <Navbar.Toggle className="toggler" aria-controls="basic-navbar-nav" />
                     </div>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mob-nav-items">
