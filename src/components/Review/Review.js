@@ -45,7 +45,7 @@ const Review = () => {
             <section>
                 <Container>
                     <Row>
-                        <Col md={6} lg={6} xs={12}>
+                        <Col md={6} lg={6} xs={12} className="text-center">
                             <h3 className="sub-title">Our Partners</h3>
                             <p>These are our current season's partners ranging from sponsors, A list/celebrity vendors, Radio and Tv stations, online platforms and other media houses.</p>
                         </Col>
@@ -122,6 +122,21 @@ const Review = () => {
                     </Row>
                 </Container>
             </section>
+            {/* News letter */}
+
+        {/* <section>
+            <Container>
+                <Row>
+                    <Col>
+                    <h3 className="sub-title">Newsletter Subscription</h3>
+                    <p>
+                    Sign up and be the first to get to know about freebies and updates
+                    </p>
+                    </Col>
+                </Row>
+            </Container>
+        </section> */}
+
         </div>
     );
 }
